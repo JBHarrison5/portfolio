@@ -36,6 +36,7 @@ i {
 em {
     font-size: 1rem;
 }
+
 .copyright {
     font-size: 0.8rem;
     padding-bottom: 1rem;
@@ -47,6 +48,7 @@ em {
     padding: 4rem 2rem;
     margin: 1rem;
     border-radius: 2rem;
+
 }
 
 .aboutMe {
@@ -62,3 +64,38 @@ em {
     background-color: #616161;
 }
 
+@media screen and (min-width: 700px) {
+    main {
+        flex-direction: row;
+        justify-content: center;
+        padding: 10%;
+    }
+
+    .box {
+        padding: 7%;
+        height: 25rem;
+        align-items: center;
+        width: 20rem;
+        box-sizing: border-box;
+        flex-direction: column;
+    }
+
+    a {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .aboutMe.a {
+        width: 40rem;
+        text-align: center;
+    }
+
+    a.aboutMe:hover {
+        background-image: url("../img/Man B&W.jpg");
+        background-size: contain;
+        background-position: center;
+    }
+}
