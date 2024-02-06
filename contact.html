@@ -3,8 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <title>John Harrison</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/indexStyles.css">
 </head>
 <body>
-<h1>Contact</h1>
+<nav class="web">
+    <div class="logo">
+        <a href="index.html" class="logo"><img src="img/John%20Harrison-logos_white.png" alt="logo"></a>
+    </div>
+    <div class="navButtons">
+        <a href="index.html">HOME</a>
+        <a href="aboutMe.html">ABOUT</a>
+        <a href="projects.html">PROJECTS</a>
+        <a href="contact.html">CONTACT</a>
+    </div>
+</nav>
+<header class="aboutMe mobile">
+    <div class="logo">
+        <a href="index.html" class="logo"><img src="img/John%20Harrison-logos_white.png" alt="logo"></a>
+    </div>
+    <!-- option tags cant have links. Need some javascript for this-->
+    <select name="dropdown" id="dropdown">
+        <option value="#">HOME</option>
+        <option value="#">ABOUT</option>
+        <option value="#">PROJECTS</option>
+        <option value="#">CONTACT</option>
+    </select>
+</header>
+<main class="contact">
+    <h3>WANT TO GET IN TOUCH?</h3>
+    <h2>SEND ME AN EMAIL!</h2>
+</main>
+<hr>
+<footer>
+    <div class="copyright">
+        <p>&#174; Copyright 2024</p>
+    </div>
+    <div class="socials">
+        <i class='bx bxl-linkedin-square bx-tada bx-rotate-90' ></i>
+        <i class='bx bxl-github bx-tada bx-rotate-90' ></i>
+    </div>
+</footer>
 </body>
 </html>
