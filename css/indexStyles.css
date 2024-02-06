@@ -122,12 +122,6 @@ em {
     margin: 0 3%;
 }
 
-.projectButton:hover{
-    a {
-        color: #494949;
-    }
-    background-color: #399dbe;
-}
 .box.aboutMe {
     background-color: #646262;
     text-align: center;
@@ -189,7 +183,7 @@ main.projects {
 }
 
 .additionalProjects button {
-    font-size: small;
+    font-size: 10pt;
     margin: 1%;
 }
 
@@ -241,6 +235,10 @@ nav.web {
         display: none;
     }
 
+    header.projects.mobile {
+        display: none;
+    }
+
     .box {
         padding: 7%;
         height: 25rem;
@@ -257,6 +255,11 @@ nav.web {
 
     p {
         font-size: 1.5rem;
+    }
+
+    .projectInfo img {
+        height: 40%;
+        width: 40%;
     }
 
     .aboutMe.a {
@@ -281,5 +284,16 @@ nav.web {
 
     .logo {
         padding-left: 2%;
+    }
+
+    .mainProjectContent {
+        margin: 5% 8% 0 8%;
+    }
+
+    .projectButton:hover{
+        a {
+            color: #494949;
+        }
+        background-color: #399dbe;
     }
 }
