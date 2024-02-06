@@ -4,10 +4,60 @@ body {
     font-family: sans-serif;
 }
 
-main {
+main.index {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+header.aboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo img {
+    padding: 1rem;
+    height: 3rem;
+    width: 5rem;
+}
+
+.logo a {
+    height: 0;
+    width: 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 5%;
+    font-size: small;
+}
+
+#downloadCVButton {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 0;
+    margin: 0;
+}
+
+button {
+    border-radius: 10%;
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #646262;
+    color: #399dbe;
+    font-size: 16pt;
+    margin: 5%;
+    padding: 2%;
+}
+
+
+select {
+    display: flex;
+    padding: 0 40% 0 0;
+    color: #399dbe;
+    background-color: #646262;
+    border-radius: 2rem;
 }
 
 footer {
@@ -57,27 +107,80 @@ em {
     padding: 4rem 2rem;
     margin: 1rem;
     border-radius: 2rem;
-
 }
 
-.aboutMe {
+.box.aboutMe {
     background-color: #646262;
     text-align: center;
 }
 
-.projects {
+.box.projects {
     background-color: #494949;
 }
 
-.contact {
+.box.contact {
     background-color: #2c2b2b;
 }
 
+.aboutMeImage {
+    display: flex;
+    padding-left: 5%;
+    margin-bottom: 5%;
+}
+
+.aboutMeImage img {
+    border: #399dbe 3px solid;
+    height: 50%;
+    width: 50%;
+    border-radius: 2rem;
+}
+
+nav.web {
+    display: none;
+}
+
 @media screen and (min-width: 700px) {
-    main {
+    main.index {
         flex-direction: row;
         justify-content: center;
         padding: 10%;
+    }
+
+    nav.web{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #494949;
+        margin: 1% 1%;
+        border-radius: 2rem;
+        padding: 0;
+    }
+
+    .info {
+        font-size: medium;
+        padding: 5% 5% 0 5%;
+    }
+
+    .navButtons {
+        display: flex;
+        margin: 0 10%;
+        justify-content: center;
+    }
+
+    .navButtons a {
+        font-size: 20pt;
+        margin: 0 5%;
+        padding: 2%;
+    }
+
+    .navButtons a:hover {
+        background-color: #399dbe;
+        color: #494949;
+    }
+
+    header.mobile {
+        display: none;
     }
 
     .box {
@@ -116,5 +219,9 @@ em {
     a.contact:hover {
         background-image: url("../img/phones B&W.jpg");
         background-size: cover;
+    }
+
+    .logo {
+        padding-left: 2%;
     }
 }

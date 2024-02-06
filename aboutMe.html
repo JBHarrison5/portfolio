@@ -12,26 +12,40 @@
     <link rel="stylesheet" href="css/indexStyles.css">
 </head>
 <body>
-<header>
+<nav class="web">
     <div class="logo">
-        <a href="index.html" class="logo">Will be picture of the logo</a>
+        <a href="index.html" class="logo"><img src="img/John%20Harrison-logos_white.png" alt="logo"></a>
+    </div>
+    <div class="navButtons">
+        <a href="index.html">HOME</a>
+        <a href="aboutMe.html">ABOUT</a>
+        <a href="projects.html">PROJECTS</a>
+        <a href="contact.html">CONTACT</a>
+    </div>
+</nav>
+<header class="aboutMe mobile">
+    <div class="logo">
+        <a href="index.html" class="logo"><img src="img/John%20Harrison-logos_white.png" alt="logo"></a>
     </div>
     <!-- option tags cant have links. Need some javascript for this-->
     <select name="dropdown" id="dropdown">
-        <option value="index.html">HOME</option>
-        <option value="aboutMe.html">ABOUT</option>
-        <option value="projects.html">PROJECTS</option>
-        <option value="contact.html">CONTACT</option>
+        <option value="#">HOME</option>
+        <option value="#">ABOUT</option>
+        <option value="#">PROJECTS</option>
+        <option value="#">CONTACT</option>
     </select>
 </header>
-<main>
+<main class="aboutMe">
     <div class="info">
-        <h2>About Me</h2>
+        <h2>ABOUT ME</h2>
         <p>I'm baby tonx fashion axe DIY direct trade umami af pop-up lomo schlitz dreamcatcher banh mi retro VHS chambray sustainable. Cliche wayfarers dreamcatcher, gorpcore activated charcoal skateboard roof party bodega boys irony meh selfies fingerstache iPhone praxis. Readymade fashion axe polaroid solarpunk flannel cred freegan offal leggings affogato. PBR&B mixtape thundercats poke gastropub, aesthetic irony celiac. Next level prism echo park taiyaki normcore.</p>
     </div>
-    <button>DOWNLOAD CV</button>
-    <img src="../img/istockphoto-1430286027-1024x1024.jpg" alt="Man on computer">
-
+    <span id="downloadCVButton">
+        <button>DOWNLOAD CV</button>
+    </span>
+    <span class="aboutMeImage">
+        <img src="../img/istockphoto-1430286027-1024x1024-modified.jpg" alt="Man on computer">
+    </span>
 </main>
 <hr>
 <footer>
