@@ -22,7 +22,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5%;
+    padding: 2%;
     background-color: #399dbe;
     border-radius: 2rem;
     margin: 0 20%;
@@ -37,6 +37,7 @@ input {
     border-radius: 2rem;
     border: none;
     background-color: #2c2b2b;
+    color: #399dbe;
 }
 
 input::placeholder {
@@ -66,8 +67,9 @@ input::placeholder {
 
 textarea {
     width: 98%;
-    border-radius: 2rem;
+    border-radius: 1rem;
     background-color: #2c2b2b;
+    color: #399dbe;
 }
 
 textarea::placeholder {
@@ -227,6 +229,14 @@ em {
     text-align: center;
     border-radius: 2rem;
     border: #399dbe 3px solid;
+    padding: 2%;
+    width: 50%;
+}
+
+.contactText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .projectInfo img {
@@ -245,6 +255,7 @@ main.projects {
 .mainProjectContent {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .additionalProjects {
@@ -371,4 +382,32 @@ nav.web {
         }
         background-color: #399dbe;
     }
+
+    main.contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+        height: 60vh;
+        gap: 10%;
+    }
+
+    form {
+        margin: 0;
+    }
+
+    h5 {
+        font-size: xx-large;
+    }
+
+    h4 {
+        font-size: xxx-large;
+    }
+
+    .contactText {
+        display: flex;
+        align-items: center;
+        padding-right: 5%;
+    }
+
 }
