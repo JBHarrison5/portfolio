@@ -36,8 +36,24 @@
     </select>
 </header>
 <main class="contact">
-    <h3>WANT TO GET IN TOUCH?</h3>
-    <h2>SEND ME AN EMAIL!</h2>
+    <h5>WANT TO GET IN TOUCH?</h5>
+    <h4>SEND ME AN EMAIL!</h4>
+    <form action="#" method="get">
+        <div class="formNames">
+            <input type="text" name="firstName" placeholder="FIRST NAME">
+            <input type="text" name="Surname" placeholder="SURNAME">
+        </div>
+        <br>
+        <input class="formEmail" type="email" name="email" placeholder="YOUR EMAIL">
+        <br>
+        <input class="formCompany" type="text" name="company" placeholder="COMPANY (OPTIONAL)">
+        <br>
+        <textarea name="message" rows="4" cols="40" placeholder="YOUR MESSAGE"></textarea>
+        <br>
+        <div id = "contactSubmitButton">
+            <button type="submit">SEND</button>
+        </div>
+    </form>
 </main>
 <hr>
 <footer>
