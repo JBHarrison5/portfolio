@@ -84,6 +84,10 @@ strong {
     border-radius: 2rem;
 }
 
+.technologies h3 {
+    color: white;
+}
+
 .techIcons {
     display: flex;
     flex-direction: row;
@@ -523,5 +527,63 @@ nav.web {
         align-items: center;
         padding-right: 5%;
     }
+
+    main.aboutMe {
+        flex-direction: row;
+    }
+
+    .snapShot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10rem;
+        justify-content: center;
+        width: 15%;
+        height: 100%;
+        margin: 5%;
+    }
+
+    .content {
+        width: 60%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home {
+        align-items: center;
+        width: 100%;
+    }
+
+    .work {
+        width: 100%;
+    }
+
+    .school {
+        width: 100%;
+        padding: 0 3% 0 3%;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .technologiesAndCV {
+        display: flex;
+        flex-direction: column;
+        width: 15%;
+        height: 100vh;
+        justify-content: space-around;
+    }
+
+    .technologies {
+        text-align: center;
+        width: 100%;
+    }
+
+    .techIcons {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
 
 }
