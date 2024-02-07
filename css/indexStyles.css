@@ -25,11 +25,12 @@ form {
     padding: 5%;
     background-color: #399dbe;
     border-radius: 2rem;
-    margin: 0 10%;
+    margin: 0 20%;
 }
 
 .formNames {
     display: flex;
+    justify-content: center;
 }
 
 input {
@@ -262,6 +263,9 @@ nav.web {
     display: none;
 }
 
+.formNames input {
+    margin: 0 2%;
+}
 @media screen and (min-width: 700px) {
     main.index {
         flex-direction: row;
