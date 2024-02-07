@@ -32,6 +32,63 @@ main.contact {
     column-gap: 5%;
 }
 
+.content {
+    gap: 4%;
+    margin: 5% 5% 0 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+strong {
+    color: white;
+    font-size: 13pt;
+}
+
+.cv {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.cv button {
+    margin-top: 0;
+}
+
+.technologiesAndCV {
+    padding: 0;
+    width: 100%;
+    gap: 4%;
+    margin: 0 5% 5% 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.content img{
+    width: 260px;
+    height: 260px;
+    border: #399dbe 3px solid;
+    border-radius: 2rem;
+}
+
+.technologies {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 0 0 3%;
+    border: #399dbe solid 3px;
+    border-radius: 2rem;
+}
+
+.techIcons {
+    display: flex;
+    flex-direction: row;
+}
+
 .school {
     width: 30%;
     display: flex;
