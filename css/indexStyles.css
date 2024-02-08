@@ -24,6 +24,10 @@ button {
     padding: 2%;
 }
 
+hr {
+    border-color: #399dbe;
+}
+
 select {
     display: flex;
     padding: 0 40% 0 0;
