@@ -81,7 +81,7 @@ strong {
     justify-content: center;
     flex-direction: column;
     margin: 0 0 0 3%;
-    border: #399dbe solid 3px;
+    border: green solid 3px;
     border-radius: 2rem;
     padding: 2%;
 }
