@@ -83,15 +83,23 @@ strong {
     margin: 0 0 0 3%;
     border: #399dbe solid 3px;
     border-radius: 2rem;
+    padding: 2%;
 }
 
 .technologies h3 {
     color: white;
+    text-align: center;
 }
 
 .techIcons {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.techIcons i {
+    font-size: 24pt;
 }
 
 .school {
@@ -584,6 +592,7 @@ nav.web {
     .techIcons {
         flex-wrap: wrap;
         justify-content: space-evenly;
+        margin: 2%;
     }
 
 
