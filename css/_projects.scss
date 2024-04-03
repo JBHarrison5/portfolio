@@ -1,0 +1,78 @@
+/*TAGS*/
+
+h2 {
+  color: white;
+}
+
+/*CLASSES*/
+
+.projectButton {
+  border-radius: 50%;
+  padding: 3px;
+  margin: 0 3%;
+}
+
+/*.projectInfo encapsulates the title, image, text etc AND the navigation arrows*/
+/*mainProjectContent excludes the navigation buttons*/
+.projectInfo {
+  @include flex-dir-alignCentre(column);
+  text-align: center;
+  border-radius: 2rem;
+  border: $mainBlue 3px solid;
+  padding: 2%;
+  width: 50%;
+}
+
+.mainProjectContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.additionalProjects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 2%;
+}
+
+/*this is the class of main for the projects page*/
+.projectsPage {
+  align-items: stretch;
+  margin-top: 3%;
+}
+
+/*TAGS IN CLASSES*/
+
+.projectInfo img {
+  border: $mainBlue 3px solid;
+  height: 60%;
+  width: 60%;
+  border-radius: 2rem;
+}
+
+.additionalProjects button {
+  font-size: 10pt;
+  margin: 1%;
+}
+
+@media screen and (min-width: 700px) {
+  /*CLASSES*/
+
+  .mainProjectContent {
+    margin: 5% 8% 0 8%;
+  }
+
+  .projectButton:hover{
+    a {
+      color: #494949;
+    }
+    background-color: $mainBlue;
+  }
+
+  /*TAGS IN CLASSES*/
+  .projectInfo img {
+    height: 40%;
+    width: 40%;
+  }
+}

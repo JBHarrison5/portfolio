@@ -5,82 +5,97 @@
     <title>John Harrison</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/indexStyles.css">
+    <!--    <link rel="stylesheet" href="css/style.css">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<nav class="web">
-    <div class="logo">
-        <a href="index.html" class="logo"><img src="img/John%20Harrison-logos_white.png" alt="logo"></a>
-    </div>
-    <div class="navButtons">
-        <a href="index.html">HOME</a>
-        <a href="aboutMe.html">ABOUT</a>
-        <a href="projects.html">PROJECTS</a>
-        <a href="contact.html">CONTACT</a>
+<nav class="navbar navbar-expand-md backgroundGrey rounded">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/John%20Harrison-logos_white.png" width="80" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span>
+                <i class="mainBlue bx bx-menu p-0"></i>
+            </span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav navButtons">
+                <li class="nav-item mx-3">
+                    <a class="nav-link fs-3 mainBlue rounded" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link fs-3 mainBlue rounded" href="aboutMe.html">ABOUT</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link fs-3 mainBlue rounded" href="projects.html">PROJECTS</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link fs-3 mainBlue rounded" href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
-<header class="mobile">
-    <div class="logo">
-        <a href="index.html" class="logo"><img src="img/John%20Harrison-logos_white.png" alt="logo"></a>
-    </div>
-    <!-- option tags cant have links. Need some javascript for this-->
-    <select name="dropdown" id="dropdown">
-        <option value="#">HOME</option>
-        <option value="#">ABOUT</option>
-        <option value="#">PROJECTS</option>
-        <option value="#">CONTACT</option>
-    </select>
-</header>
-<main class="aboutMe">
-    <div class="snapShot">
-        <div class= "snapShotInfo">
-            <i class='bx bxs-home'></i>
-            <h6>BELFAST</h6>
+<div class="container my-5">
+    <div class="row">
+        <div class="col-4 d-flex flex-column align-items-center">
+            <i class="bx bxs-home"></i>
+            <h5 class="fs-4">BELFAST</h5>
         </div>
-        <div class="snapShotInfo">
-            <i class='bx bxs-briefcase'></i>
-            <h6>XYZ</h6>
+        <div class="col-4 d-flex flex-column align-items-center">
+            <i class="bx bxs-briefcase"></i>
+            <h5 class="fs-4">HAWK-EYE</h5>
         </div>
-        <div class="snapShotInfo">
-            <i class='bx bxs-graduation'></i>
-            <a href="https://io-academy.uk/"><h6>iO Academy</h6></a>
-            <h6>Durham University</h6>
+        <div class="col-4 d-flex flex-column align-items-center">
+            <i class="bx bxs-graduation"></i>
+            <h5 class="fs-4">DURHAM UNIVERSITY</h5>
+            <h5 class="fs-4">IO ACADEMY</h5>
         </div>
     </div>
-    <div class="aboutMeContent">
-        <img src="img/profile-B&W.jpeg" alt="man on computer">
-        <p><strong>My name is John Harrison</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fermentum nibh quam, ac accumsan lectus porttitor ut. Fusce ullamcorper tristique semper. Donec suscipit urna ac sapien eleifend, ac feugiat arcu pharetra. Cras dictum in justo finibus vehicula. Nunc non velit a ex hendrerit dignissim sed quis metus. Integer dapibus enim cursus ligula interdum, vitae suscipit nibh ornare. Donec convallis, nunc in posuere malesuada, augue mauris posuere dolor, nec ultrices nisi eros a massa. In a vehicula turpis, quis lacinia nisl. Proin ac mi risus. In ut ullamcorper neque. Morbi mollis suscipit libero sed suscipit. Fusce molestie metus ac sapien tincidunt, eu lobortis est ullamcorper.</p>
-    </div>
-    <div class="technologiesAndCV">
-        <div class="technologies">
-            <h3>SKILLS</h3>
-            <div class="techIcons">
-                <i class='bx bxl-javascript' ></i>
-                <i class='bx bxs-file-html' ></i>
-                <i class='bx bxl-python' ></i>
-                <i class='bx bxl-php' ></i>
-                <i class='bx bxl-css3' ></i>
-            </div>
-        </div>
-        <div class="cv">
-            <button>DOWNLOAD CV</button>
+    <div class="row my-3">
+        <div class="offset-3 col-6 offset-3 d-flex justify-content-center">
+            <img src="img/JH%20B&W2.jpg" class="img-fluid mainImg">
         </div>
     </div>
-
-</main>
-<hr>
-<footer>
-    <div class="copyright">
-        <p>&#174; Copyright 2024</p>
+    <div class="row">
+        <div class="col-12 text-center">
+            <p class="fs-5"><strong class="fs-4">My name is John Harrison</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                fermentum nibh quam, ac accumsan lectus porttitor ut. Fusce ullamcorper tristique semper. Donec suscipit
+                urna ac sapien eleifend, ac feugiat arcu pharetra. Cras dictum in justo finibus vehicula. Nunc non velit a
+                ex hendrerit dignissim sed quis metus. Integer dapibus enim cursus ligula interdum, vitae suscipit nibh
+                ornare. Donec convallis, nunc in posuere malesuada, augue mauris posuere dolor, nec ultrices nisi eros a
+                massa. In a vehicula turpis, quis lacinia nisl. Proin ac mi risus. In ut ullamcorper neque. Morbi mollis
+                suscipit libero sed suscipit. Fusce molestie metus ac sapien tincidunt, eu lobortis est ullamcorper.</p>
+        </div>
     </div>
-    <div class="socials">
-        <a href="https://uk.linkedin.com/"><i class='bx bxl-linkedin-square' ></i></a>
-        <a href="https://github.com/JBHarrison5"><i class='bx bxl-github' ></i></a>
+    <div class="row my-4">
+        <div class="col-12 d-flex justify-content-center">
+            <button type="button" class="fs-3 col-8 col-md-3 btn btn-secondary mainBlue backgroundGrey">DOWNLOAD CV</button>
+        </div>
+    </div>
+</div>
+<hr class="mt-5">
+<footer class="container">
+    <div class="row">
+        <div class="col-6 d-flex align-items-center text-start p-0 m-0">
+            <p class="p-0 m-0">&#174; Copyright 2024</p>
+        </div>
+        <div class="col-6 p-0 m-0 text-end">
+            <a href="https://uk.linkedin.com/" ><i class='bx bxl-linkedin-square fs-4 p-0' ></i></a>
+            <a href="https://github.com/JBHarrison5"><i class='bx bxl-github fs-4 p-0' ></i></a>
+        </div>
     </div>
 </footer>
 </body>
