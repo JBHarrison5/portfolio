@@ -1,3 +1,7 @@
+emailjs.init({
+    publicKey: "Fae-Nc0i85iimBkiM",
+});
+
 function sendMail() {
     let params = {
         firstName: document.querySelector('#firstName').value,
