@@ -1,0 +1,272 @@
+/*CLASSES*/
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  padding: 4rem 2rem;
+  margin: 1rem;
+  border-radius: 2rem;
+}
+
+/*CLASSES IN CLASSES*/
+/*home*/
+.box.aboutMe {
+  background-color: #646262;
+  text-align: center;
+}
+
+.backgroundGrey {
+  background-color: #494949;
+}
+.box.projects {
+  background-color: #494949;
+}
+
+.box.contact {
+  background-color: #2c2b2b;
+}
+
+@media screen and (min-width: 720px) {
+  /*CLASSES*/
+  .box {
+    padding: 7%;
+    height: 25rem;
+    align-items: center;
+    width: 20rem;
+    box-sizing: border-box;
+    flex-direction: column;
+  }
+  /*TAGS WITH A CLASS*/
+  main.index {
+    flex-direction: row;
+    justify-content: center;
+    padding: 10%;
+  }
+  a.aboutMe:hover {
+    background-image: url("../img/JH B&W2.jpg");
+    background-size: cover;
+  }
+  a.projects:hover {
+    background-image: url("../img/code B&W.jpg");
+    background-size: cover;
+  }
+  a.contact:hover {
+    background-image: url("../img/phones B&W.jpg");
+    background-size: cover;
+  }
+}
+/*TAGS*/
+/*general*/
+body {
+  background-color: #000000;
+  color: #399dbe;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  font-family: "Bebas Neue", sans-serif;
+  color: #399dbe;
+}
+
+.mainBlue {
+  color: #399dbe;
+}
+
+hr {
+  border-color: #399dbe;
+}
+
+p {
+  color: #399dbe;
+}
+
+a {
+  text-decoration: none;
+  color: #399dbe;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.5rem;
+}
+
+/*about me*/
+
+/*projects*/
+
+/*contact*/
+
+/*CLASSES*/
+/*general*/
+
+/*about me*/
+
+
+
+/*projects*/
+
+
+
+/*contacts*/
+
+
+.mainImg {
+  border: #399dbe 3px solid;
+  border-radius: 2rem;
+  max-width: 300px;
+  width:100%;
+  opacity: 0.7;
+}
+
+.card {
+  border: #399dbe 3px solid;
+  border-radius: 2rem;
+  opacity: 1;
+  animation: slideIn 100ms;
+}
+
+@keyframes slideIn {
+  from { display: block; opacity: 0}
+  to {opacity: 1}
+}
+
+.hidden {
+  display: none;
+}
+
+
+/*contact*/
+
+
+/*CLASSES IN CLASSES*/
+/*IDs*/
+/*about me*/
+#downloadCVButton {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 0;
+  margin: 0;
+}
+
+/*contact*/
+#contactSubmitButton button {
+  margin: 0;
+}
+
+#contactSubmitButton {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+}
+
+@media screen and (min-width: 700px) {
+  /*TAGS*/
+  /*general*/
+  /*a {*/
+  /*  font-size: 3rem;*/
+  /*  background-position: center;*/
+  /*}*/
+  /*contact*/
+  form {
+    margin: 0;
+  }
+  h5 {
+    font-size: xx-large;
+  }
+  h4 {
+    font-size: xxx-large;
+  }
+  /*CLASSES*/
+  /*general*/
+  .logo {
+    padding-left: 2%;
+  }
+  /*about me*/
+  .snapShot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10rem;
+    justify-content: center;
+    width: 15%;
+    height: 100%;
+    margin: 5%;
+  }
+  .aboutMeContent {
+    width: 60%;
+    align-items: center;
+    text-align: center;
+    display: flex;
+  }
+  .technologiesAndCV {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 100vh;
+    justify-content: space-around;
+  }
+  .technologies {
+    text-align: center;
+    width: 100%;
+  }
+  .techIcons {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 2%;
+  }
+  /*projects*/
+  .mainProjectContent {
+    margin: 5% 8% 0 8%;
+  }
+  /*TAGS WITH A CLASS*/
+  /*general*/
+  /*nav.web {*/
+  /*  display: flex;*/
+  /*  flex-direction: row;*/
+  /*  align-items: center;*/
+  /*  justify-content: space-between;*/
+  /*  background-color: #494949;*/
+  /*  margin: 1% 1%;*/
+  /*  border-radius: 2rem;*/
+  /*  padding: 0;*/
+  /*}*/
+  header.mobile {
+    display: none;
+  }
+  /*about me*/
+  main.aboutMe {
+    flex-direction: row;
+  }
+  /*contact*/
+  main.contact {
+    flex-direction: row;
+    margin: 0;
+    height: 60vh;
+    gap: 10%;
+  }
+  /*TAGS IN CLASSES*/
+  /*general*/
+  .navButtons a {
+    font-size: 20pt;
+  }
+
+  .navButtons a:hover {
+    background-color: #399dbe;
+    color: #494949;
+  }
+  /*projects*/
+  .projectInfo img {
+    height: 40%;
+    width: 40%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
