@@ -1,7 +1,6 @@
 const leftButton = document.querySelector('.leftButton');
 const rightButton = document.querySelector('.rightButton');
 const projectButtons = document.querySelectorAll('.projectButton');
-
 let projectIndex = 1;
 
 const displayProjectCardClicks = (operator) => {

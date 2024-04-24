@@ -72,6 +72,20 @@ main {
   justify-content: center;
 }
 
+.aboutMeText {
+  font-family: "Bebas Neue Pro", sans-serif;
+  font-size: 10pt;
+}
+
+.aboutMeText a {
+  font-family: "Bebas Neue Pro", sans-serif;
+  text-decoration: underline #399dbe;
+  font-size: 10pt;
+}
+
+.card-body p {
+  font-family: "Bebas Neue Pro", sans-serif;
+}
 button {
   font-family: "Bebas Neue", sans-serif;
   color: #399dbe;
